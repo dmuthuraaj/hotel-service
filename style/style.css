@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 .hotel-body{
     background-color: rgba(247, 7, 211, 0.805);
 }
@@ -36,6 +41,10 @@
     width: 300px;
     border: 1px solid gray;
     background-color: rgba(255, 255, 255, 0.486);
+}
+
+.search-icon{
+    border: 0;
 }
 
 .header-navigation {
@@ -163,6 +172,7 @@
 .hotel-table,
 .profile-mask {
     padding: 20px;
+    /* border-bottom: 1px solid rgba(240, 8, 228, 0.839); */
 }
 
 .profile-mask {
@@ -204,12 +214,20 @@
     flex-direction: column;
 }
 
+.review{
+    margin-bottom: 30px;
+}
+
 .user-details {
     display: flex;
     flex-direction: row;
     align-items: center;
     height: 50px;
     /* background-color: aqua; */
+}
+
+.user-image,.user-rating{
+    width: 20%;
 }
 
 .user-image img {
@@ -219,9 +237,15 @@
 
 .user-name-date {
     height: 50px;
+    width: 60%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+}
+
+.user-name-date p{
+    font-size: 15px;
 }
 
 .user-show-all {
